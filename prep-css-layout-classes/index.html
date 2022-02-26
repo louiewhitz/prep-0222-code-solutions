@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+
+    body {
+      font-family: sans-serif;
+
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      width: 100%;
+
+
+
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-basis: calc(100% / 3);
+
+
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding: 0px 8px 0px 8px;
+
+    }
+    .images {
+      width: 100%;
+      flex-basis: calc(100% / 3);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/crusade.jpg" class="images">
+        <h3>Crusade</h3>
+        <p>Text Content Here</p>
+      </div>
+      <div class="column"><img src="images/raiders.jpg" class="images">
+        <h3>Raiders</h3>
+        <p>Text Content Here</p>
+      </div>
+      <div class="column"><img src="images/temple.jpg" class="images">
+        <h3>Temple</h3>
+        <p>Text Content Here</p>
+      </div>
+    </div>
+  </div>
+    </body>
+</html>
